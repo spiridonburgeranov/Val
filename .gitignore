@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pym
+*.pyi
+
+# Poetry
+.poetry/
+poetry.lock
+
+# Virtualenv
+venv/
+.env
+.env.*
+
+# Logs
+*.log
+
+# SQLite / DB files
+*.db
+*.sqlite3
+
+# Docker
+docker-compose.override.yml
+*.dockerfile
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+
+# Ruff / Black cache
+__ruff_cache__/
+__pycache__/
