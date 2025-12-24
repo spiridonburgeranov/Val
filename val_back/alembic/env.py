@@ -12,7 +12,7 @@ target_metadata = Base.metadata
 
 
 def get_sync_database_url() -> str:
-    return settings.DATABASE_URL.replace("+aiosqlite", "")
+    return settings.DATABASE_URL.replace("+asyncpg", "")
 
 
 def run_migrations_offline():
