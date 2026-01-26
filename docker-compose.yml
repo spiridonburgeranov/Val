@@ -3,13 +3,20 @@ services:
     image: val_back
     build:
       context: ./val_back
-    ports:
-      - '8000:8000'
     env_file:
       - .env
     depends_on:
       db:
         condition: service_healthy
+
+  frontend:
+    image: val_front
+    build:
+      context: ./val_front
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
 
   db:
     image: postgres:16
