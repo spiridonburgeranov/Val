@@ -1,0 +1,68 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+page {
+  margin: 0;
+  position: relative;
+  background-color: #0F141A;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-image: url('/bgClove.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  transform: scale(1.15);
+  z-index: -1;
+}
+
+html::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+  to bottom,
+  rgba(15, 25, 35, 0.35),
+  rgba(15, 25, 35, 0.75),
+  #0f1923
+  );
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+

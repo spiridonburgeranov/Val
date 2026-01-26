@@ -1,0 +1,32 @@
+.tab__user__info {
+    display: flex;
+    width: 100%;
+    height: 100px;
+
+    background: rgba(200 194 228 / 0.08);
+    border-radius: 50px;
+    margin: 10px 0;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar__user {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 70px;
+    margin-left: 100px;
+}
+
+.user__rank {
+    width: 60px;
+    margin-right: 0;
+}
+
+.user__name {
+    font-size: 25px;
+    margin-right: 50px;
+}
+
