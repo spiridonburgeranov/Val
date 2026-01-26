@@ -38,3 +38,4 @@ docker-compose.override.yml
 # Ruff / Black cache
 __ruff_cache__/
 __pycache__/
+.idea
