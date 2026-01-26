@@ -1,0 +1,39 @@
+.app {
+    min-height: 100vh;
+    background: #0F1923;
+}
+
+.page {
+    position: relative;
+    min-height: calc(100vh - 64px);
+    padding: 32px 24px;
+    color: white;
+    overflow: hidden;
+}
+
+.page::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    height: 1000px;
+    background-image: url("../assets/bgClove.png");
+    background-size: cover;
+    background-position: start;
+
+    transform: scale(1.08);
+    opacity: 1;
+
+    z-index: 0;
+}
+
+.page > * {
+    position: relative;
+    z-index: 1;
+}
+
+.page__inner {
+    max-width: min(1000px, 100%);
+    margin: 0 auto;
+}
+
