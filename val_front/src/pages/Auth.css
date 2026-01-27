@@ -24,3 +24,57 @@
     font-weight: normal;
     color: #9A9A9A;
 }
+
+.auth input {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    padding: 12px 26px;
+    margin: 2px;
+    color: #fff;
+    font-size: 14px;
+}
+
+.auth input:placeholder {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Montserrat;
+}
+
+.auth input:focus {
+    outline: none;
+    border-color: #ff4655;
+}
+
+.auth button {
+    margin-top: 8px;
+    padding: 10px 26px;
+    background: #ff4655;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Montserrat;
+}
+
+.auth__title__page {
+    display: flex;
+    font-size: 30px;
+}
+
+.new__acc {
+    font-size: 15px;
+    margin: 10px;
+}
+
+.new__acc__btn {
+    margin: 8px;
+    padding: 10px 24px;
+    background: transparent;
+    border: 1px solid #ff4655;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: Montserrat;
+}

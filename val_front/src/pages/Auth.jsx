@@ -7,7 +7,7 @@ export default function AuthPage() {
 
         <div className="authPage">
             <div className="auth">
-                <h2>Sign In</h2>
+                <div className="auth__title__page">Sign in</div>
 
                 <h3 className="auth__title">Track your skin collection, make your lists and customize your board!</h3>
 
@@ -18,7 +18,8 @@ export default function AuthPage() {
             </div>
 
             <div className="new__acc">
-                Don't have Account yet? <button className="new__acc__btn">Create</button>
+                Don't have Account yet?
+                <button className="new__acc__btn">Create</button>
             </div>
         </div>
     );
