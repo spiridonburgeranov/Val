@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import RootLayout from '../layout/RootLayout.jsx';
 
-import Home from '../pages/Home.jsx';
+import Home from '../pages/home.jsx';
 import Catalog from '../pages/Catalog.jsx';
 import Weapons from '../pages/Weapons.jsx';
 import Stats from '../pages/Stats.jsx';
