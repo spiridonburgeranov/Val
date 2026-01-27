@@ -1,0 +1,111 @@
+.weapons_page {
+    padding: 32px 24px;
+    color: #fff;
+}
+
+.weapons_title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+}
+
+.weapons_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.weapon_card {
+    background: #0f1923;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px; /* прямоугольная, не "мыльная" */
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.weapon_card_top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.weapon_name {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+}
+
+.weapon_card_image {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+.weapon_metainfo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.about_weapon_stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    font-size: 13px;
+}
+
+.about_weapon_stats span {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 8px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.weapon_damage {
+    margin-top: 8px;
+}
+
+.weapon_damage_title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.weapon_damage_grid {
+    display: grid;
+    gap: 6px;
+}
+
+.weaponCard__damageRow {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr;
+    font-size: 12px;
+    padding: 6px 8px;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.weaponCard__damageRow--head {
+    background: rgba(255, 255, 255, 0.08);
+    font-weight: 600;
+}
+
+.weaponCard__dist {
+    opacity: 0.85;
+}
+
+.weapon_card:hover {
+    border-color: rgba(255, 70, 85, 0.5);
+}
+
+.weapon_metainfo span:last-child {
+    color: #ff4655;
+    font-weight: 600;
+}

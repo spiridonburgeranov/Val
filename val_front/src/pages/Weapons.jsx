@@ -1,3 +1,6 @@
+import "./weapons.css"
+import {createSessionStorage} from "react-router-dom";
+
 export default function Weapons() {
 
     const weapons = [
@@ -165,7 +168,85 @@ export default function Weapons() {
 
 
     ]
-    return ( <div>Gavno</div>
 
+    const distanceLabels = {
+        avgClassicDist: "0-30m",
+        farClassicDist: "30-50m",
+
+        lowShortyDist: "0-7m",
+        avgShortyDist: "7-15m",
+        farShortyDist: "15-50m",
+
+        avgFrenzyDist: "0-20m",
+        farFrenzyDist: "20-50m",
+
+        avgGhostDist: "0-30m",
+        farGhostDist: "30-50m",
+
+        lowBanditDist: "0-10m",
+        avgBanditDist: "10-30m",
+        farBanditDist: "30-50m",
+
+        avgSheriffDist: "0-30m",
+        farSheriffDist: "30-50m",
+    }
+
+    return (
+
+        <div className="weapons_page">
+
+            <div className="weapons_title">
+                <h1>All Valorant Weapons</h1>
+            </div>
+
+            <div className="weapons_grid">
+                {weapons.map((w) => (
+                    <article key={w.name} className="weapon_card">
+                        <div className="weapon_card_top">
+                            <div className="weapon_name">{w.name}</div>
+                            <img className="weapon_card_image" src={w.image} alt={w.name} />
+                            <div className="weapon_metainfo">
+                                <span>Type: {w.type}</span>
+                                <span>Price: {w.price} credits</span>
+                            </div>
+
+                            <div className="about_weapon_stats">
+                                <span>Fire Mode: {w.fireMode}</span>
+                                <span>Fire Rate: {w.fireRate} rounds/sec</span>
+                                <span>Reload Speed: {w.reloadSpeed} sec</span>
+                                <span>Magazine: {w.magazine}</span>
+                            </div>
+
+                            <div className="weapon_damage">
+
+                                <div className="weapon_damage_title">Damage</div>
+
+                                <div className="weapon_damage_grid">
+
+                                    <div className="weaponCard__damageRow weaponCard__damageRow--head">
+                                        <span>Distance</span>
+                                        <span>Head</span>
+                                        <span>Body</span>
+                                        <span>Leg</span>
+                                    </div>
+
+                                    {Object.entries(w.damage).map(([distKey, d]) => (
+                                        <div key={distKey} className="weaponCard__damageRow">
+                                            <span className="weaponCard__dist">
+                                                {distanceLabels[distKey] ?? distKey}
+                                            </span>
+                                            <span>{d.headDamage}</span>
+                                            <span>{d.bodyDamage}</span>
+                                            <span>{d.legDamage}</span>
+                                        </div>
+                                        ))}
+                                </div>
+                            </div>
+                        </div>
+
+                    </article> ))
+                }
+            </div>
+        </div>
     );
 }
