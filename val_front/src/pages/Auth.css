@@ -3,14 +3,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background:
-        linear-gradient(
-            to right,
-            rgb(15, 25, 35), rgb(0 0 0 / 0)
-        );
     border-radius: 10px 60px 30px;
     padding: 40px 20px;
-    height: 600px;
+    height: 100%;
+}
+
+.authPage-header {
+    display: flex;
+
+}
+
+.authPage__lang__btn {
+    margin-top: 8px;
+    padding: 10px 26px;
+    background: #ff4655;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
 }
 
 .auth {
@@ -27,9 +39,9 @@
 
 .auth input {
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    padding: 12px 26px;
+    border: 1px solid rgba( 212, 212, 212 );
+    border-radius: 12px;
+    padding: 12px 100px;
     margin: 2px;
     color: #fff;
     font-size: 14px;
@@ -37,7 +49,7 @@
 
 .auth input:placeholder {
     color: rgba(255, 255, 255, 0.5);
-    font-family: Montserrat;
+    font-family: "Inter", sans-serif;
 }
 
 .auth input:focus {
@@ -54,7 +66,7 @@
     font-weight: 600;
     border-radius: 8px;
     cursor: pointer;
-    font-family: Montserrat;
+    font-family: "Inter", sans-serif;
 }
 
 .auth__title__page {
@@ -68,13 +80,10 @@
 }
 
 .new__acc__btn {
-    margin: 8px;
-    padding: 10px 24px;
     background: transparent;
-    border: 1px solid #ff4655;
-    color: #fff;
+    color: cornflowerblue;
     font-weight: 600;
-    border-radius: 8px;
     cursor: pointer;
-    font-family: Montserrat;
+    font-family: "Inter", sans-serif;
+    border: none;
 }

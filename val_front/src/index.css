@@ -23,9 +23,13 @@ html, body {
 }
 
 page {
+  display: flex;
+  min-height: 100vh;
   margin: 0;
   position: relative;
   background-color: #0F141A;
+  justify-content: center;
+  align-items: center;
 }
 
 html::before {

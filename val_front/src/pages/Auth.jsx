@@ -6,6 +6,15 @@ export default function AuthPage() {
     return (
 
         <div className="authPage">
+
+            <header className="authPage-header">
+                <div className="authPage__logo__container">
+                    <h1>VALSKINS</h1>
+                </div>
+
+                <button className="authPage__lang__btn">LN</button>
+            </header>
+
             <div className="auth">
                 <div className="auth__title__page">Sign in</div>
 
