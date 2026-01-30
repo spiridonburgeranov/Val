@@ -13,7 +13,6 @@
     display: flex;
     align-items: center;
     padding: 0 24px;
-    justify-content: space-between;
 }
 
 .logo {
@@ -21,11 +20,13 @@
     font-weight: 700;
     letter-spacing: 0.08em;
     font-size: 30px;
+    margin-right: 40px;
 }
 
 .nav {
     display: flex;
     gap: 16px;
+    margin-right: auto;
 }
 
 .nav__link {
@@ -72,6 +73,8 @@
     padding: 8px 20px;
     border-radius: 9px;
     text-decoration: none;
+    margin-left: auto;
+    margin-right: 30px;
 }
 
 .nav__list {
@@ -81,7 +84,4 @@
     list-style: none;
 }
 
-.auth {
-    margin-left: auto;
-}
 
