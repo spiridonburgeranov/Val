@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="header">
             <div className="header__inner">
-                <div className="logo">VALSKINS</div>
+                <div className="logo">skinity</div>
 
                 <nav className="nav">
                     <ul className="nav__list">
@@ -19,7 +19,7 @@ export default function Header() {
 
                 <div className="auth">
                     <NavLink to="/login" className="auth__login">
-                        Sign In
+                        <img className="user_login_image" src="../user.png" alt="" />
                     </NavLink>
                 </div>
 

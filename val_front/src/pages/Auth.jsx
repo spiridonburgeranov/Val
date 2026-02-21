@@ -14,7 +14,7 @@ export default function AuthPage() {
     });
 
     const [ error, setError ] = useState("");
-    const [success, setSuccess ] = useState("");
+    const [ success, setSuccess ] = useState("");
 
     const isRegister = mode === "register";
 
@@ -49,15 +49,15 @@ export default function AuthPage() {
     }
 
     function validate() {
-        if (!form.email.trim()) return "Введите email.";
-        if (!emailLooksValid) return "Похоже, email введён неверно.";
-        if (!form.password) return "Введите пароль.";
-        if (form.password.length < 6) return "Пароль должен быть минимум 6 символов.";
+        if (!form.email.trim()) return "Enter E-Mail";
+        if (!emailLooksValid) return "Wrong password";
+        if (!form.password) return "Enter Password";
+        if (form.password.length < 6) return "Password should be at least 6 characters";
 
         if (isRegister) {
-            if (!form.nickname.trim()) return "Введите никнейм.";
-            if (!form.confirmPassword) return "Повторите пароль.";
-            if (form.password !== form.confirmPassword) return "Пароли не совпадают.";
+            if (!form.nickname.trim()) return "Enter Nickname";
+            if (!form.confirmPassword) return "Confirm Password";
+            if (form.password !== form.confirmPassword) return "Passwords do not match";
         }
 
         return "";
@@ -81,7 +81,7 @@ export default function AuthPage() {
                 // Представим, что сервер создал аккаунт
                 await fakeRequest(600);
 
-                setSuccess("Аккаунт создан! Теперь войдите.");
+                setSuccess("Account successfully registered!");
                 // после регистрации логично перекинуть в логин
                 switchMode("login");
             } else {
@@ -91,10 +91,10 @@ export default function AuthPage() {
                 // имитация "токена" — потом заменишь на реальный
                 localStorage.setItem("token", "fake-token");
 
-                setSuccess("Вы вошли! (пока это имитация)");
+                setSuccess("You are logged in");
             }
         } catch (err) {
-            setError("Что-то пошло не так. Попробуйте ещё раз.");
+            setError("Something went wrong! Try again later");
         }
     }
 
@@ -105,9 +105,17 @@ export default function AuthPage() {
                     <h1>VALSKINS</h1>
                 </div>
 
-                <button className="authPage__lang__btn" type="button">
-                    LN
-                </button>
+                <div className="authPage__lang">
+                    <button className="authPage__lang__btn" type="button">
+                        LN
+                    </button>
+
+                    <ul className="authPage__lang__list">
+                        <li>EN</li>
+                        <li>RU</li>
+                        <li>DE</li>
+                    </ul>
+                </div>
             </header>
 
             <div className="auth">

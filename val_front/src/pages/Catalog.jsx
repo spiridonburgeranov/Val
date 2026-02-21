@@ -1,3 +1,9 @@
+import { useEffect, useState } from 'react'
+
 export default function Catalog() {
-    return <h1 style={{ color: "white" }}>Catalog page</h1>;
+    const [ skins, setSkins ] = useState([])
+    const [ loading, setLoading ] = useState(true)
+    const [ error, setError ] = useState("")
+
+
 }
